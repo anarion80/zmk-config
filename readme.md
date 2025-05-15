@@ -1,26 +1,27 @@
-# anarion's Corneish-Zen config
+# anarion's ZMK config
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/)
 configuration build upon excellent [config from urob](https://github.com/urob/zmk-config).
-It consists of a 42-keys base layout used on my Corneish-Zen.
+It consists of a 42-keys base layout used on my Corneish-Zen
+and Kinesis Advantage 360 Pro layout.
 
 ## Highlights
 
 - ["Timeless" homerow mods](#timeless-homerow-mods)
-- Auto-toggle off number layer
-- Magic thumb quadrupling as Repeat/Sticky-shift/Capsword/Shift
+- Magic thumb quadrupling as Sticky-shift/Capsword/Shift
 - Arrow-cluster doubles as <kbd>home</kbd>, <kbd>end</kbd>, <kbd>begin/end of
   document</kbd> on long-press
-- Shifted actions that make sense: <kbd>, ↦ ;</kbd>, <kbd>. ↦ :</kbd> and <kbd>?
-  ↦ !</kbd>
 - Simpler Devicetree syntax using helper macros from
   [zmk-helpers](https://github.com/urob/zmk-helpers)
 - Fully automated, nix-powered [local build environment](#local-build-environment)
 
-![](draw/keymap.png)
-([Click here](https://raw.githubusercontent.com/urob/zmk-config/refs/heads/main/draw/base.svg)
-for a breakdown by layer - powered by
-[keymap-drawer](https://github.com/caksoylar/keymap-drawer).)
+### Corneish-Zen
+
+![](draw/corneish_zen_keymap.png)
+
+### Kinesis Advantage 360 Pro
+
+![](draw/adv360_keymap.png)
 
 ## Setup
 
@@ -125,8 +126,10 @@ for many shells.)
 #### Drawing the keymap
 
 The build environment packages
-[keymap-drawer](https://github.com/caksoylar/keymap-drawer). `just draw` parses
-`base.keymap` and draws it to `draw/base.svg`.
+[keymap-drawer](https://github.com/caksoylar/keymap-drawer). `just draw <keyboard> <keymap>`
+parses relevant keymap for a given keyboard and draws it to `draw/keymap.svg`.
+For my two keyboards that is `just draw adv360 adv360` and
+`just draw corne_rotated corne`.
 
 #### Hacking the firmware
 

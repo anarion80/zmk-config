@@ -81,15 +81,14 @@ clean-nix:
     nix-collect-garbage --delete-old
 
 # parse & plot keymap
-draw:
+draw $keyboard $keymap: 
     #!/usr/bin/env bash
     set -euo pipefail
     # keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" --virtual-layers Combos >"{{ draw }}/base.yaml"
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" > "{{ draw }}/base.yaml"
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/{{ keymap }}.keymap" > "{{ draw }}/{{ keymap }}.yaml"
     # yq -Yi '.combos.[].l = ["Combos"]' "{{ draw }}/base.yaml"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "corne_rotated" >"{{ draw }}/base.svg"
-    # keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "ferris/sweep" >"{{ draw }}/base.svg"
-
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/{{ keymap }}.yaml" -k {{ keyboard }} >"{{ draw }}/{{ keymap }}.svg"
+    # keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "ferris/sweep" >"{{ draw }}/base.svg" 
 # initialize west
 init:
     west init -l config
