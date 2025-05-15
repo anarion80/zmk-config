@@ -16,5 +16,7 @@ include:
   # - board: planck_rev6
   - board: corneish_zen_v1_left
   - board: corneish_zen_v1_right
+  - board: adv360_left
+  - board: adv360_right
   # - board: glove80_lh
   # - board: glove80_rh

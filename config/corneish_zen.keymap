@@ -70,7 +70,7 @@
     )
 
 /* #include "zmk-helpers/key-labels/42.h" */
-#include "base.keymap"
+#include "corne.keymap"
 
 /* use 6-column layout for Zen */
 /{ chosen { zmk,physical-layout = &foostan_corne_6col_layout; }; };

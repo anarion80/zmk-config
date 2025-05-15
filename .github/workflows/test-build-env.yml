@@ -30,4 +30,4 @@ jobs:
       - name: Test build recipe
         run: nix develop --command just build corneish_zen_v1_left
       - name: Test draw recipe
-        run: nix develop --command just draw
+        run: nix develop --command just draw corne_rotated corne

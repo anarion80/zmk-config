@@ -26,10 +26,14 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: refil
+      url-base: https://github.com/refil
 
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: refil
+      revision: adv360-z3.5-2
+      # remote: zmkfirmware
       import: app/west.yml
 
     # ZMK modules
