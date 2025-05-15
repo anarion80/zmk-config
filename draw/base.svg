@@ -1724,16 +1724,17 @@ path.combo {
 <text x="0" y="0" class="key tap">&#x27;</text>
 <text x="0" y="-34" class="key shifted">&quot;</text>
 </g>
-<g transform="translate(1160, 150)" class="key enter keypos-23">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key enter tap glyph mdi:keyboard-return"/>
-</g>
-<g transform="translate(40, 230)" class="key keypos-24">
+<g transform="translate(1160, 150)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <a href="#Base">
 <text x="0" y="0" class="key tap layer-activator">Base</text>
 </a><text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
+<g transform="translate(40, 230)" class="key keypos-24">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<a href="#Navigation">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 62%">Navigat…</tspan></text>
+</a></g>
 <g transform="translate(120, 230)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
@@ -1784,15 +1785,15 @@ path.combo {
 </a></g>
 <g transform="translate(320, 293)" class="key keypos-36">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(408, 304) rotate(15.0)" class="key keypos-37">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">SPC</text>
 </g>
-<g transform="translate(502, 320) rotate(30.0)" class="key keypos-38">
-<rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:backspace-reverse-outline"/>
+<g transform="translate(502, 320) rotate(30.0)" class="key enter keypos-38">
+<rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key enter"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
 <g transform="translate(698, 320) rotate(-30.0)" class="key enter keypos-39">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key enter"/>
@@ -1800,11 +1801,11 @@ path.combo {
 </g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(880, 293)" class="key keypos-41">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-control"/>
 </g>
 </g>
 </g>
