@@ -1,6 +1,6 @@
 ---
 draw_config:
-  footer_text: "anarion80/zmk-config-corneish-zen"
+  footer_text: "anarion80/zmk-config"
 
   # key dimensions, non-ortho layouts use key_h for width as well
   # key_w: 100 # This doesn't seem to do anything? 🤔
@@ -510,6 +510,14 @@ parse_config:
       shifted: ""
       tap: "$$mdi:bluetooth-connect$$"
       hold: "$$mdi:transfer-left$$"
+    "&bl BL_INC":
+      shifted: ""
+      tap: "$$mdi:bluetooth-connect$$"
+      hold: "$$mdi:transfer-right$$"
+    "&bl BL_DEC":
+      shifted: ""
+      tap: "$$mdi:bluetooth-connect$$"
+      hold: "$$mdi:transfer-left$$"
     "&bt BT_SEL 0":
       shifted: ""
       tap: "$$mdi:bluetooth-connect$$"
@@ -530,10 +538,18 @@ parse_config:
       shifted: ""
       tap: "$$mdi:bluetooth-connect$$"
       hold: 5
+    "&bl BL_TOG":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
     "&out OUT_TOG":
       shifted: $$mdi:usb$$
       tap: $$mdi:toggle-switch$$
       hold: $$mdi:bluetooth$$
+    "&rgb_ug RGB_TOG":
+      shifted: $$mdi:led-off$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:led-on$$
     "&tdundo":
       shifted: ""
       tap: "Z"
@@ -565,6 +581,14 @@ parse_config:
     "&hml_repeat LS(LCTRL) 0": $$mdi:repeat$$
     "&smart_mouse": $$mdi:mouse$$
     "&kp LC(X)": $$mdi:content-cut$$
+    "&Win_Cut": $$mdi:content-cut$$
+    "&kp LC(C)": $$mdi:content-copy$$
+    "&Win_Copy": $$mdi:content-copy$$
+    "&kp LC(Z)": $$mdi:undo$$
+    "&Win_Undo": $$mdi:undo$$
+    "&Win_Select_All": $$mdi:select-all$$
+    "&kp LS(LC(V))": $$mdi:content-paste$$
+    "&Win_Paste": $$mdi:content-paste$$
     "&kp LC(INS)": $$mdi:content-copy$$
     "&kp LS(INS)": $$mdi:content-paste$$
     "&hmr_rpar_gt LA(LCTRL) 0": ")"
@@ -574,7 +598,13 @@ parse_config:
     "&sl FUN": "FUN"
     "&sls 0": "⇧F"
     "&dot_spc": ".⎵⇧"
-    "&kp LG(Q)": "App Close"
+    "&kp LG(Q)": "$$mdi:close-box$$"
+    "&tog 1": "$$mdi:dialpad$$"
+    "&tog 4": "$$mdi:gesture-tap-button$$"
+    "App Close": "$$mdi:close-box$$"
+    "&stp STP_BAT": "$$mdi:battery-unknown$$"
+    "&studio_unlock": "$$mdi:lock-open$$"
+    "&macro_ver": "v.X.Y"
 
 
     # Mouse
@@ -614,9 +644,24 @@ parse_config:
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
+    KP_EQUAL:
+      tap: "="
     EQUAL:
       tap: "="
       shifted: "+"
+    KP_DIVIDE:
+      tap: "/"
+    KP_NUM: "NUM LOCK"
+    KP_N1: "1"
+    KP_N2: "2"
+    KP_N3: "3"
+    KP_N4: "4"
+    KP_N5: "5"
+    KP_N6: "6"
+    KP_N7: "7"
+    KP_N8: "8"
+    KP_N9: "9"
+    KP_N0: "0"
     PLUS: +
     MINUS:
       tap: "-"
@@ -711,9 +756,9 @@ parse_config:
     PAUSE_BREAK: "Pause Break"
     C_STOP: $$mdi:stop$$
     LA(F4): "WIN CLOSE"
-    LC(F4): "Tab Close"
-    LC(LS(TAB)): ">TAB"
-    LC(TAB): "<TAB"
+    LC(F4): "$$mdi:tab-remove$$"
+    LC(LS(TAB)): "$$mdi:tab-minus$$"
+    LC(TAB): $$mdi:tab-plus$$"
 
 
     # Numbers
@@ -772,6 +817,9 @@ parse_config:
 
     # Whitespace
     ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    KP_ENTER:
       type: enter
       tap: $$mdi:keyboard-return$$
     RETURN:

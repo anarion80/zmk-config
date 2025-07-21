@@ -51,7 +51,7 @@
   Win_Paste: Windows_Paste {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LC(V)>;
+    bindings = <&kp LS(LC(V))>;
     display-name = "Windows Paste";
   };
 

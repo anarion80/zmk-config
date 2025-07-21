@@ -197,7 +197,7 @@ ZMK_MOD_MORPH(smart_shft,
 /* Custom behaviors */
 
 // Alt+Tab swapper, requires tri-state module.
-ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
               ignored-key-positions = <L44>;)
 
 // Define mod-morph with a *single* mod trigger for less repetition.
@@ -246,7 +246,7 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &tog 4                                                           &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &hml LCTRL A   &hml LALT S   &hml LCMD D  &hml LSHFT F      &kp G  &none           &kp LGUI &kp LCTRL &kp LALT  &kp LGUI           &kp ESC &kp H  &hmr RSHFT J  &hmr LCMD K  &hmr LALT L   &hmr LCTRL SEMI &kp SQT
+        &kp ESC   &hml LCTRL A   &hml LALT S   &hml LGUI D  &hml LSHFT F      &kp G  &none           &kp LGUI &kp LCTRL &kp LALT  &kp LGUI           &kp ESC &kp H  &hmr RSHFT J  &hmr LGUI K  &hmr LALT L   &hmr LCTRL SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &kp GRAVE &none  &none &none                  &lt_spc 2 0 &bs_del   &kp END  &kp PG_DN &kp ENTER &smart_shft          &kp RALT &none  &kp LBKT &kp RBKT &mo 2
       >;
@@ -256,7 +256,7 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &hml LCTRL A   &hml LALT S   &hml LCMD D  &hml LSHFT F      &kp G  &none           &kp LGUI &kp LCTRL &kp LALT  &kp LGUI           &kp ESC &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+        &kp ESC   &hml LCTRL A   &hml LALT S   &hml LGUI D  &hml LSHFT F      &kp G  &none           &kp LGUI &kp LCTRL &kp LALT  &kp LGUI           &kp ESC &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
       &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &lt_spc 2 0 &kp BSPC   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
       >;
@@ -266,8 +266,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &trans &kp TAB_LT &kp TAB_RT &swapper &kp LS(TAB) &trans  &none                                           &none &trans &kp HOME NAV_UP &kp PG_UP  &trans  &trans
-        &trans &Mac_Select_All &trans &trans &trans &kp LG(Q)  &none        &trans &trans &trans &trans        &none &caps_word NAV_LEFT NAV_DOWN NAV_RIGHT  &trans  &trans
-        &trans &Mac_Undo &Mac_Cut &Mac_Copy &Mac_Paste &trans                      &trans &trans                     &trans &kp END &kp INS &kp PG_DN  &trans  &trans
+        &trans &Win_Select_All &trans &trans &trans &kp LG(Q)  &none        &trans &trans &trans &trans        &none &caps_word NAV_LEFT NAV_DOWN NAV_RIGHT  NAV_DEL  &trans
+        &trans &Win_Undo &Win_Cut &Win_Copy &Win_Paste &trans                      &trans &trans                     &trans &kp END &kp INS &kp PG_DN  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
