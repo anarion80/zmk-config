@@ -455,6 +455,9 @@ parse_config:
     "&lt_spc NAV 0":
       tap: $$mdi:keyboard-space$$
       hold: "NAV"
+    "&lt_spc 2 SPC":
+      tap: $$mdi:keyboard-space$$
+      hold: "NAV"
     "&lt ADJT ESC":
       tap: $$mdi:keyboard-esc$$
       hold: "ADJ"
@@ -606,7 +609,6 @@ parse_config:
     "&studio_unlock": "$$mdi:lock-open$$"
     "&macro_ver": "v.X.Y"
 
-
     # Mouse
     "&mkp MB1": $$mdi:numeric-1-circle$$
     "&mkp MB2": $$mdi:numeric-2-circle$$
@@ -619,7 +621,6 @@ parse_config:
     "&msc SCRL_DOWN": $$mdi:arrow-down-bold$$
     "&msc SCRL_X(-100)": $$mdi:arrow-left-bold$$
     "&msc SCRL_X(100)": $$mdi:arrow-right-bold$$
-
 
   # ZMK
   zmk_keycode_map:
@@ -759,7 +760,6 @@ parse_config:
     LC(F4): "$$mdi:tab-remove$$"
     LC(LS(TAB)): "$$mdi:tab-minus$$"
     LC(TAB): $$mdi:tab-plus$$"
-
 
     # Numbers
     N1:
